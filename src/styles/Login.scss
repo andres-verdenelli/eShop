@@ -1,0 +1,61 @@
+.Login {
+	display: grid;
+	place-items: center;
+
+	&__logo {
+		margin: 40px 0;
+		height: 40px;
+	}
+
+	&__form-container {
+		display: grid;
+		place-items: center;
+	}
+
+	&__form {
+		display: grid;
+	}
+
+	&__label {
+		font-size: var(--sm);
+		font-weight: bold;
+		margin-bottom: 4px;
+	}
+
+	&__input {
+		background-color: var(--text-input-field);
+		border: none;
+		border-radius: 8px;
+		height: 30px;
+		font-size: var(--md);
+		padding: 6px;
+		margin-bottom: 12px;
+		&:focus{
+			outline: 2px solid var(--hospital-green);
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: black;
+
+		&:hover {
+			text-decoration: underline;
+
+		}
+
+	}
+
+	&__button {
+		height: 50px;
+		width: 100%;
+		border-radius: 8px;
+		border: none;
+		margin: 24px 0;
+		background-color: var(--hospital-green);
+		font-size: var(--md);
+		color: var(--white);
+		font-weight: bold;
+		cursor: pointer;
+	}
+}

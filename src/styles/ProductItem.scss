@@ -1,0 +1,17 @@
+.ProductItem {
+    width: 250px;
+}
+
+.ProductItem__imagen {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 4px 4px 8px -4px;
+}
+
+.ProductItem__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
