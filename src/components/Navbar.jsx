@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "../styles/Navbar.scss";
 
-export default function Navbar() {
+export default function Navbar({ isLogged = false }) {
   const [open, setOpen] = useState(false);
 
   function handleNavbarButton() {
@@ -46,6 +46,15 @@ export default function Navbar() {
               Others
             </a>
           </li>
+          {isLogged ? (
+            <li className="Navbar__item">
+              <span>user@gmail.com</span>
+            </li>
+          ) : (
+            <li className="Navbar__item">
+              <span>LogIn</span>
+            </li>
+          )}
         </ul>
       </div>
       <div className="Navbar__overlay" onClick={handleNavbarButton}></div>
