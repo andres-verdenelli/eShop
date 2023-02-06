@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../styles/Navbar.scss";
+import ItemListLink from "./ItemListLink";
 
 export default function Navbar({ isLogged = false }) {
   const [open, setOpen] = useState(false);
@@ -16,11 +17,12 @@ export default function Navbar({ isLogged = false }) {
       </button>
       <div className="Navbar__container">
         <ul className="Navbar__list">
-          <li className="Navbar__item">
-            <a className="Navbar__link" href="/">
-              All
-            </a>
-          </li>
+          <ItemListLink text="All" />
+          <ItemListLink text="Clothes" />
+          <ItemListLink text="Electronics" />
+          <ItemListLink text="Furnitures" />
+          <ItemListLink text="Toys" />
+          <ItemListLink text="Others" />
           <li className="Navbar__item">
             <a className="Navbar__link" href="/">
               Clothes
